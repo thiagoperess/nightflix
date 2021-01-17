@@ -177,12 +177,36 @@ header nav a:hover {
     }
 
     .filme-principal {
-        padding-bottom: 20px;
+        padding-bottom: 60px;
+        padding-top: 25px;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+
+    .descricao {
+        font-size: 5px;
     }
 }
 
 @media screen and (min-width:1000px) {
     .descricao {
         width: 70%;
+    }
+}
+
+@media screen and (min-width:372px) {
+    .filme-principal {
+        padding-bottom: 100px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        padding-top: 25px;
+    }
+
+    .descricao {
+        font-size: 0.2rem;
     }
 }
