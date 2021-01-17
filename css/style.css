@@ -1,0 +1,188 @@
+/* style css */
+
+:root {
+    --vermelho: red;
+    --preto: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: Arial, Times, sans-serif;
+    color: white;
+}
+
+/* header */
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 40px;
+    color: var(--vermelho);
+    font-family: 'Segoe UI', Roboto, Ubuntu, sans-serif;
+    margin-left: 5px;
+    font-style: inherit;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/* caixa principal */
+
+.filme-principal {
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/fundo-inicial.jpg');
+    height: 600px;
+    background-size: cover;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    font-size: 18px;
+
+}
+
+.titulo {
+    font-size: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.6);
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: silver;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color:  rgba(0,0,0,0.8);
+    color: black;
+    transition: .3s ease all;
+}
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.filme-principal .container {
+    width: 60%;
+}
+
+.box-filme {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+/* footer */
+
+.center {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 20vh;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    margin: -5px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.fa-linkedin {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-github {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-twitter {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-medium {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-instagram {
+    text-decoration: none;
+    color: white;
+}
+/* responsividade */
+
+@media screen and (max-width:700px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    .filme-principal {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 70%;
+    }
+}
